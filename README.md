@@ -2,12 +2,12 @@
 
 What's included:
   
-* jade as templating language (or use html, if don't care)  
-* sass for style management (with ready-to-go Ionic styles override)  
-* js-data for data management (let's give it a try instead of Restangular, which is great too)  
-* imgcache.js and wrapper service to cache loaded images (Google Chrome or Cordova only)  
-* environment management (check env app/env dir)
-* font preloading
+* __jade__ as templating language (or use html, if don't care)  
+* __sass__ for style management (with ready-to-go Ionic styles override)  
+* __js-data__ for data management (let's give it a try instead of Restangular, which is great too)  
+* __imgcache.js__ and wrapper service to cache loaded images (Google Chrome or Cordova only)  
+* __environment management__ (check env app/env dir)
+* __font preloading__
 
 Plugins you will need to run app on device:
  
@@ -19,21 +19,23 @@ Plugins you will need to run app on device:
 * org.apache.cordova.inappbrowser
 
 To get started run  
-```
-$ npm install    
+```bash
+$ npm install      
 $ ./dev-server  
 ```
 
 Will start development server with live reload on localhost:5000  
 
 To build app run   
-```gulp webpack:build```
+```bash
+gulp webpack:build
+```
 
 App will be built into www folder, then you can package ionic app.  
    
 ### Environment management   
 You can choose environment to build using --env key  
-```
+```bash
 gulp webpack:build --env=production
 ```  
 
