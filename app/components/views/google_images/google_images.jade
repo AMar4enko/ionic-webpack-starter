@@ -1,0 +1,7 @@
+ion-view(title="Google Images test")
+  ion-content
+    ion-list
+      ion-item(collection-repeat="image in googleImages.items" class="item-avatar")
+        img(ng-src="{{image.tbUrl}}")
+        h2(ng-bind="image.titleNoFormatting")
+        p(ng-bind="image.contentNoFormatting")

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>{%= o.htmlWebpackPlugin.options.title || o.htmlWebpackPlugin.options.pkg.name || 'Webpack App'%}</title>
+    <script src="cordova.js"></script>
+  </head>
+  <body>
+    <ion-nav-view></ion-nav-view>
+    {% for (var chunk in o.htmlWebpackPlugin.assets) { %}<script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>{% } %}
+  </body>
+</html>

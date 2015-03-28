@@ -1,0 +1,19 @@
+@import '../../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+.static-map {
+  .img-wrap {
+    opacity: 0;
+  }
+  &.loading {
+    .img-wrap {
+      opacity: 0;
+      @include transition(all 0.3s ease-in-out);
+    }
+  }
+
+  &.loaded {
+    .img-wrap {
+      opacity: 1;
+    }
+  }
+}

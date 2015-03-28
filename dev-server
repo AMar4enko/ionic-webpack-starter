@@ -1,0 +1,2 @@
+#!/bin/bash
+webpack-dev-server --content-base www/ -devtool eval-source-map --port 5000 --hot --inline --colors --history-api-fallback

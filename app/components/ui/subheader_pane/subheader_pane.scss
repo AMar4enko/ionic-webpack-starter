@@ -1,0 +1,36 @@
+@import './variables';
+
+.subheader-pane {
+  z-index: 11 !important;
+  &.has-tabs-top.has-subheader {
+    top: 137px;
+  }
+  &.has-subheader {
+    top: 88px;
+  }
+}
+
+.pane-backdrop {
+  &:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    right: 0; bottom: 0;
+    visibility: visible;
+    opacity: 0;
+    background-color: black;
+    z-index: 3;
+    transition: opacity 0.6s ease-out;
+    -webkit-transition: opacity 0.6s ease-out;
+    pointer-events: none;
+  }
+  &.pane-backdrop-visible {
+    &:after {
+      //visibility: visible;
+      opacity: 0.8;
+    }
+  }
+}
+
+
